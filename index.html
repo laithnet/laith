@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
     font-family: 'Cairo';font-size: 22px;
+    background-color: black;
 }
 </style>
     <meta charset="UTF-8">
@@ -18,8 +18,9 @@ body {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="js.js"></script>
+
     
-    <!--Nevber-->
     <header class="nevsection-container">
     <nav class="navbar navbar-expand-lg navbar navbar-light fixed-top" style="background-color: rgb(37, 37, 37);">
         <div class="container-fluid">
@@ -35,7 +36,6 @@ body {
       </nav>
     </header>
     <!--Slider photo-->
-    <main>
     <section>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -56,7 +56,13 @@ body {
     </section>
   <section class="contatiner1">
 <br><br>
-<h1>!! شمنتضر <br><b>اختار الباقة</b> </h1>
+<main class="main-content">
+  
+
+<h1 class="shimmer">!! شمنتضر <br><b>اختار الباقة</b> </h1>
+<canvas id="network"></canvas>
+
+
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
@@ -128,11 +134,11 @@ body {
       <tbody>
         <tr class="bg-gray">
           <td><a type="button" class="btn btn-success btn-block">فودو افلام</a></td>
-          <td><a type="button" target="blank" href="https://movie.vodu.me/index.php?do=list&type=0" class="btn btn-success btn-lg">افتح</a></td>
+          <td><a type="button" target="blank" href="http://movie.vodu.me" class="btn btn-success btn-lg">افتح</a></td>
         </tr>      
         <tr class="bg-gray">
           <td><a type="button" class="btn btn-info btn-block">فودو مسلسلات</a></td>
-          <td><a type="button" target="blank" href="https://movie.vodu.me/index.php?do=list&type=1" class="btn btn-info btn-lg">افتح</a></td>
+          <td><a type="button" target="blank" href="http://movie.vodu.me" class="btn btn-info btn-lg">افتح</a></td>
         </tr>
         <tr class="bg-gray">
           <td><a type="button" class="btn btn-warning btn-block">فودو العاب</a></td>
@@ -140,15 +146,15 @@ body {
         </tr>
         <tr class="bg-gray">
           <td><a type="button" class="btn btn-success btn-block">فودو برامج مهكرة</a></td>
-          <td><a type="button" target="blank" href="https://share.vodu.store/#/category/21" class="btn btn-success btn-lg">افتح</a></td>
+          <td><a type="button" target="blank" href="https://share.vodu.store/#/" class="btn btn-success btn-lg">افتح</a></td>
         </tr>
         <tr class="bg-gray">
           <td><a type="button" class="btn btn-danger btn-block">فودو بين سبورت</a></td>
-          <td><a type="button" target="blank" href="https://tv.vodu.me/#channel/1" class="btn btn-danger btn-lg">افتح</a></td>
+          <td><a type="button" target="blank" href="https://share.vodu.store/#/" class="btn btn-danger btn-lg">افتح</a></td>
         </tr>
         <tr class="bg-gray">
           <td><a type="button" class="btn btn-primary btn-block">فودو كتب</a></td>
-          <td><a type="button" target="blank" href="https://share.vodu.store/#/category/32" class="btn btn-primary btn-lg">افتح</a></td>
+          <td><a type="button" target="blank" href="https://share.vodu.store/#/" class="btn btn-primary btn-lg">افتح</a></td>
         </tr>
       </tbody>
     </table>
@@ -191,13 +197,13 @@ body {
   </div>
         
   <a href="Shop.html" target="_blank" class="visit-btn">        منتجاتنا       </a>
-    <a href="https://fast.com/" target="_blank" class="visit-btn">       قياس سرعة الأنترنت    </a>
+  <a href="https://fast.com/" target="_blank" class="visit-btn">       قياس سرعة الأنترنت    </a>
 
 
   </section>
-
-
 </main>
+
+
   
 </body>
 </html>
