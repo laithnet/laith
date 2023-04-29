@@ -258,8 +258,13 @@
       font-family: 'Cairo', sans-serif;
 
     }
-
+.contenr{
+  justify-content: center;
+  display: flex;
+}
   .contatiner1{
+    justify-content: center;
+
       width: 90%;
       padding-left: 200px;
       text-align: center;
@@ -588,4 +593,76 @@ h6 {
   to {
     filter: hue-rotate(360deg);
   }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.speedometr {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+.text-grey-darkest{
+  color: #ffffff;
+}
+
+.speedometr .scale {
+  position: absolute;
+  border: 3px solid red;
+  width: 75px;
+  height: 15px;
+  border-radius: 100% 100% 0 0;
+  border-bottom: none;
+}
+
+.speedometr .scale.low {
+  top: 10px;
+  left: -30px;
+  border-color: #e74c3c;
+  transform: rotate(-50deg);
+  transform-origin: top right;
+}
+
+.speedometr .scale.middle {
+  left: calc(50% - 37px);
+  border-color: #f1c40f;
+}
+
+.speedometr .scale.hight {
+  top: 10px;
+  right: -30px;
+  transform: rotate(50deg);
+  transform-origin: top left;
+  border-color: #2ecc71;
+}
+
+.speedometr .arrow {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -1px;
+  width: 1px;
+  height: 66px;
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 100% 100% 0 0;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-75deg);
+  transform-origin: bottom center;
+  transition: transform 1s;
+  transition-timing-function: cubic-bezier(0.65, 1.95, 0.03, 0.32);
+}
+.speedometr .arrow:after {
+  content: '';
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: -6px;
 }
