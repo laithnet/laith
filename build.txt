@@ -1,0 +1,57 @@
+اول شي تاخذ المجلد اللي نزلتة من الكيت هب 
+laith-main
+تودي الى 
+C:\xampp\htdocs\laith-net
+
+
+
+C:\Windows\System32\drivers\etc
+افتح ملف 
+hosts
+
+# localhost name resolution is handled within DNS itself.
+192.168.1.105       laith.local
+#	::1             localhost
+
+change this ip to your ip network
+
+
+
+بعدين تروح على هذا المسار 
+C:\xampp\apache\conf/
+تفتح هذا الملف 
+httpd
+تبحث عن شي اسمة 
+VirtualHost
+راح تخلي بصفة هذا الكود 
+<VirtualHost *:80>
+    DocumentRoot "C:\xampp\htdocs\laith-net"
+    ServerName laith.net
+</VirtualHost>
+
+
+بالنسبة الى قاعدة البيانات 
+
+اول شي تثبت الاكسامب 
+بعدين تشغل سيرفر قاعدة البيانات 
+تسوي قاعدة بيانات جديدة 
+تسميها ليث 
+وتسوي بداخلها جدول 
+تسمي 
+messege 
+وتخلي بي 2 كولوم 
+name
+message
+الاسم خلي 10 احرف
+والرسالة خليها 1000 حرف 
+
+
+
+هنا انتة جهزت قاعدة البيانات 
+
+تكدر تتاكد من المتغيرات اللي بملف ال بي اج بي بعدها 
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "laith";
