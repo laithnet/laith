@@ -24,7 +24,6 @@ $result = mysqli_query($connection, $query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رسائل المستخدمين </title>
     <style>
-        @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap";
 
 /* relevant portion */
 #toggle-pseudos:checked ~ .container ul{
@@ -93,6 +92,8 @@ li::marker{
 
 /* layout and decoration */
 :root{
+	font-family: 'Cairo', sans-serif;
+
 	--accent: #7a24f2;
 	--accent-alpha: #7a24f2bb;
 	--text: #000;
@@ -102,11 +103,15 @@ li::marker{
 }
 
 ::selection{
+	font-family: 'Cairo', sans-serif;
+
 	background-color: var(--accent-alpha);
 	color: var(--section-color);
 }
 
 html, body{
+	font-family: 'Cairo', sans-serif;
+
 	position: relative;
 	inset: 0;
 	width: 100%;
@@ -116,8 +121,9 @@ html, body{
 }
 
 html{
+	font-family: 'Cairo', sans-serif;
+
 	color: var(--text);
-	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.28em;
 	font-weight: 500;
 	display: block;
@@ -128,6 +134,8 @@ html{
 
 body{
 	display: grid;
+	font-family: 'Cairo', sans-serif;
+
 	place-items: center;
 	background-color: transparent;
 }
@@ -135,6 +143,8 @@ body{
 /* keep the <main> thing the <main> thing */
 main{
 	position: relative;
+	font-family: 'Cairo', sans-serif;
+
 	inset: 0;
 	max-width: 950px;
 	min-width: 480px;
@@ -143,6 +153,8 @@ main{
 
 h1, h2{
 	padding: 0;
+	font-family: 'Cairo', sans-serif;
+
 	margin: 0;
 	margin-top: -0.3ch; /* wanna get rid of those annoying margin */
 	font-weight: 700;
@@ -150,6 +162,8 @@ h1, h2{
 }
 
 h2{
+	font-family: 'Cairo', sans-serif;
+
 	font-size: 1em;
 }
 
@@ -195,6 +209,8 @@ label{
 	position: relative;
 	margin: 0 0.6em 1em 0;
 	font-weight: 600;
+	font-family: 'Cairo', sans-serif;
+
 	cursor: pointer;
 	transition: color ease 0.4s;
 	color: var(--text-secondary);
@@ -202,6 +218,8 @@ label{
 }
 
 label::before{
+	font-family: 'Cairo', sans-serif;
+
 	content: "";
 	position: absolute;
 	left: 0;
@@ -222,6 +240,8 @@ label:hover{
 
 /* showcase the concept */
 .container{
+	font-family: 'Cairo', sans-serif;
+
 	position: relative;
 	width: 90%;
 	background-color: var(--container);
@@ -245,38 +265,45 @@ label:hover{
 
 /* 13 */
 a {
-  background-color: #000;
-background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
-  border: none;
-  z-index: 1;
+	font-family: 'Cairo', sans-serif;
+	
+	background-color: #000;
+	
+	background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+	border: none;
+	z-index: 1;
 }
 a:after {
-  position: absolute;
-  content: "";
-  width: 30%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+	font-family: 'Cairo', sans-serif;
+	position: absolute;
+	content: "";
+	width: 30%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
   border-radius: 5px;
-   background-color: #4dccc6;
-background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   box-shadow:
    -7px -7px 20px 0px #ef5016,
    -4px -4px 5px 0px #ef5016,
    7px 7px 20px 0px #ef5016,
    4px 4px 5px 0px #ef5016;
-  transition: all 10s ease;
+   transition: all 10s ease;
 }
 a:hover {
-  color: #fff;
+	color: #fff;
+	font-family: 'Cairo', sans-serif;
 }
 a:hover:after {
-  top: 0;
-  height: 100%;
+	top: 0;
+	font-family: 'Cairo', sans-serif;
+	height: 100%;
 }
 a:active {
-  top: 2px;
+	top: 2px;
+	font-family: 'Cairo', sans-serif;
 }
 
 
